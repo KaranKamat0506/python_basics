@@ -7,4 +7,4 @@ elif marks>=45 and attendence<=75:
 elif marks<=45 and attendence>=75:
     print("Marks should be more than 45%")
 else:
-    print("The student can sit for examnation.")
+    print("The student cannot sit for examnation.")
