@@ -8,5 +8,4 @@ for book in collection:
         break
 else:
     print("No, I dont have that book.")
-
     
