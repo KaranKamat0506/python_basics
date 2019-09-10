@@ -1,8 +1,12 @@
 #program to define a class
 class User:
-    pass
+    def __init__(self,first,last):
+        self.first=first
+        self.last=last
 
-user1=User()
-user2=User()
-user3=User()
-print("\n",user1,"\n",user2,"\n",user3)
+
+user1=User("Jon","Matt")
+user2=User("Pat","Strout")
+user3=User("Jesse","Pinkman")
+print(user1.first,user1.last)
+print(user2.first,user2.last)
