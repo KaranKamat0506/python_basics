@@ -9,8 +9,14 @@ print(just_another_variable)
 python_is_awesome=200
 print(python_is_awesome)
 
-#Assigning Variables all at once
+
+gus_fring=10
+print(gus_fring+x)
+
+#all at once
 all,at,once=1,2,3
+print(all,at)
 print(all,at,once)
+
 
 
