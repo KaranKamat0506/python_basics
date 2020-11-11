@@ -1,3 +1,4 @@
+# Exponent Function using for loop
 def exp(base_num,pow_num):
     result=1
     for index in range(pow_num):
@@ -6,3 +7,6 @@ def exp(base_num,pow_num):
 base=int(input("Enter the Base Number: "))
 power=int(input("Enter the Power Number: "))
 exp(base,power)
+
+#Exponent 
+print(2**3)
