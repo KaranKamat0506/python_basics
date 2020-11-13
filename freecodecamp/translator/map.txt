@@ -1,0 +1,6 @@
+Giraffe Translator
+
+Replace a vowel with g 
+
+cat -> cgt
+dog -> dgt
