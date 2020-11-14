@@ -1,0 +1,5 @@
+Jim -> Salesman
+Dwight -> Salesman
+Pam -> Receptionist
+Micheal -> Regional Manager
+Oscar -> Accountant
