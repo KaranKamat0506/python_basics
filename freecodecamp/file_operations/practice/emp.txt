@@ -1,0 +1,7 @@
+Jim -> Sales
+Pam -> Receptionist
+Dwight -> Sales
+Micheal -> Manager
+Stanley -> Sales
+Holly -> Human Resource
+Toby -> HR
