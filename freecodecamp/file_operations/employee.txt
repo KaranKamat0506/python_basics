@@ -1,5 +1,3 @@
-Jim -> Salesman
-Dwight -> Salesman
-Pam -> Receptionist
-Micheal -> Regional Manager
-Oscar -> Accountant
+
+File contents have been overwritten completely
+Kelly -> Customer Service
