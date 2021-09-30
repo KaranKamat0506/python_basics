@@ -14,3 +14,6 @@ print(laptops[2:])
 laptops[2]="Toshiba"
 print(laptops[2])
 print(laptops[0:])
+
+mobiles=["Samsung","Mi","Iphone","LG"]
+print(mobiles[0])
