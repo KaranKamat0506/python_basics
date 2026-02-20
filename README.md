@@ -3,7 +3,7 @@
 ## 📌 Overview
 
 This repository contains **basic Python programs and coding questions** to build a strong foundation in Python programming.
-It is intended for learning, practice, and quick revision of core concepts.
+It is intended for learning, practice, and quick revision of core concepts
 
 ---
 
