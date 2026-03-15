@@ -1,0 +1,80 @@
+In a POST request, the client sends data to the server to create a new resource.
+
+In simple terms:
+
+POST = Send data to server to create something new.
+
+Example scenario
+
+Suppose you want to add a new customer.
+
+Client sends a POST request to:
+
+POST /customers
+
+with data like:
+
+{
+ "id": 3,
+ "name": "Karan",
+ "city": "Pune"
+}
+
+The server receives this data and creates a new record.
+
+Example FastAPI code
+
+Using FastAPI:
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+customers = []
+
+@app.post("/customers")
+def add_customer(customer: dict):
+    customers.append(customer)
+    return {"message": "Customer added", "customer": customer}
+What happens step-by-step
+1️⃣ Client sends request
+POST /customers
+
+Body:
+
+{
+ "id": 3,
+ "name": "Karan",
+ "city": "Pune"
+}
+2️⃣ FastAPI receives request
+
+FastAPI matches the endpoint:
+
+@app.post("/customers")
+3️⃣ Data goes into function parameter
+customer: dict
+
+FastAPI automatically converts the JSON body into a Python dictionary.
+
+So inside the function:
+
+customer = {"id":3,"name":"Karan","city":"Pune"}
+4️⃣ Function processes data
+customers.append(customer)
+
+Customer is added to the list.
+
+5️⃣ Server sends response
+{
+ "message":"Customer added",
+ "customer":{
+   "id":3,
+   "name":"Karan",
+   "city":"Pune"
+ }
+}
+Difference between GET and POST
+Method	Purpose	Data location
+GET	Retrieve data	URL
+POST	Create new data	Request body

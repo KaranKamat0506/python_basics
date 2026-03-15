@@ -1,0 +1,60 @@
+Let's break this line by line.
+
+@app.get("/customers")
+def get_customers():
+    return customers
+
+1] @app.get("/customers") -> This is called a decorator
+
+It tells FastAPI:
+When someone sends an HTTP GET request to /customers, run the function below.
+So this creates and API endpoint.
+
+Example request from browser or application:
+GET http://127.0.0.1:8000/customers
+FastAPI sees the request and routes it to the function get_customers().
+
+2] def get_customers():
+This is a Python function.
+This function contains the logic that will run when the API is called.
+So when the client calls:
+GET /customers
+
+FastAPI executes:
+get_customers()
+
+3] return customers
+customers is your list of dictionaries:
+
+customers = [
+ {"id": 1, "name": "Rohan", "city": "Mumbai"},
+ {"id": 2, "name": "Aman", "city": "Delhi"}
+]
+
+FastAPI automatically converts this Python object into JSON response.
+Response returned to the client:
+[
+ {"id":1,"name":"Rohan","city":"Mumbai"},
+ {"id":2,"name":"Aman","city":"Delhi"}
+]
+
+4] Complete flow
+Step by step what happens:
+1] Client sends request
+    GET /customers
+2] FastAPI finds matching route
+    @app.get("/customers")
+3] FastAPI executes function
+    get_customers()
+4] Function returns Python data
+    customers
+5] FastAPI converts to JSON
+6] Client receives response
+    [
+        {"id":1,"name":"Rohan","city":"Mumbai"},
+        {"id":2,"name":"Aman","city":"Delhi"}
+    ]
+
+@app.get("/customers") defines a GET API endpoint.
+When a client sends a request to /customers, FastAPI calls the get_customers() function.
+The function returns customer data, and FastAPI automatically converts the Python object into a JSON response.
